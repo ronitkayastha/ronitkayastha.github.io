@@ -396,6 +396,100 @@ body {
     color: #666;
 }
 
+/* Experience Page */
+.experience-page {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.experience-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.experience-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-left: 5px solid #3498db;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+
+.experience-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.experience-title h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.experience-title .company {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.experience-date {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-date .date-range {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-date .location {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.experience-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-details li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    color: #444;
+}
+
+.experience-details li:before {
+    content: "▸";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.experience-details li:last-child {
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     background-color: #2c3e50;
@@ -425,5 +519,14 @@ footer {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .experience-header {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .experience-date {
+        text-align: left;
     }
 }
